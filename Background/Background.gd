@@ -9,7 +9,7 @@ func _ready():
 
 func update_color():
 	if HUD.color_background:
-		pass
+		$Color.color = Color8(231,245,255)
 	else:
 		pass
 

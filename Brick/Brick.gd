@@ -10,13 +10,29 @@ func _ready():
 
 func update_color():
 	if HUD.color_blocks:
-		pass
+		if row == 0:
+			$Color.color = Color8(224,49,49)
+		elif row == 1:
+			$Color.color = Color8(253,126,20)
+		elif row == 2:
+			$Color.color = Color8(103,65,217)
+		elif row == 3:
+			$Color.color = Color8(102,168,15)
+		elif row == 4:
+			$Color.color = Color8(247, 131,172)
+		elif row == 5:
+			$Color.color = Color8(51,154,240)
+		elif row == 6:
+			$Color.color = Color8(255,212,59)
+			
+			
 	else:
-		pass
+		$Color.color = Color(1,1,1,1)
 
 func emit_particle(pos):
 	if HUD.particle_blocks:
 		pass
+		
 	else:
 		pass
 	
