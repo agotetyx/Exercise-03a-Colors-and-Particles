@@ -11,7 +11,7 @@ func update_color():
 	if HUD.color_background:
 		$Color.color = Color8(231,245,255)
 	else:
-		pass
+		$Color.color = Color8(33,37,41)
 
 func _on_HUD_changed():
 	update_color()
